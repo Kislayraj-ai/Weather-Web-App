@@ -1,0 +1,89 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	background: linear-gradient(rgb(47, 150, 163), rgb(48, 62, 143));
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	color: white;
+}
+h1 {
+	position: relative;
+	top: -25%;
+}
+
+.temperature {
+	height: 20vh;
+	width: 50%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-direction: column;
+	margin: 1rem;
+	margin-top: -50px;
+}
+.wind {
+	position: absolute;
+	top: 60%;
+	display: flex;
+	width: 70vw;
+	justify-content: space-between;
+	/* background: rgb(23, 163, 228); */
+	height: 30vh;
+	align-items: center;
+	padding: 0.5rem;
+}
+.wind-speed,
+.minmax {
+	background: rgba(0, 0, 0, 0.2);
+	padding: 1rem;
+	width: 250px;
+	display: grid;
+	place-items: center;
+}
+.wind-speed h2 {
+	margin-bottom: 20px;
+}
+.deg-section {
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+}
+.deg-section span {
+	margin: 10px;
+	font-size: 1.9rem;
+}
+.deg-section h2 {
+	font-size: 2.5rem;
+}
+.description {
+	margin: 1.2rem;
+}
+@media screen and (max-width: 570px) {
+	.wind {
+		position: relative;
+		top: 20%;
+		display: flex;
+		width: 100vw;
+		justify-content: space-between;
+		/* background: rgb(23, 163, 228); */
+		height: 30vh;
+		align-items: center;
+		padding: 0.5rem;
+	}
+	.wind-speed,
+	.minmax {
+		background: rgba(0, 0, 0, 0.2);
+		padding: 1rem;
+		width: 200px;
+		display: grid;
+		place-items: center;
+		font-size: 14px;
+	}
+}
